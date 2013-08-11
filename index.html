@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script type="text/javascript" src="src/js/reversi.js" ></script>
+	<link type="text/css" rel="stylesheet" href="src/style/main.css" />
+	
+	<script type="text/javascript">
+		function startApp() {
+			var gameContainer = document.getElementById("gameContainer");
+
+			var reversi = new Reversi();
+			reversi.initialize(gameContainer);
+		};
+	</script>
+</head>
+
+<body onload="startApp();">
+	<h2> Reversi:</h2>
+	<div id="gameContainer" >
+	</div>
+</body>
+</html>

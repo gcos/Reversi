@@ -1,4 +1,4 @@
 Reversi
 =======
 
-The Reversi game
+An HTML/CSS/JavaScript implementation of the Reversi game.

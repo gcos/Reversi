@@ -57,7 +57,7 @@ var Reversi = function() {
 		};
 
 		var self = this;
-		this.canvas.addEventListener("click", function(){
+		this.canvas.addEventListener("click", function(event){
 			self.clickHandler.call(self, event);
 		});
 
@@ -73,8 +73,8 @@ var Reversi = function() {
 	 * @private
 	 */
 	this.clickHandler = function(event) {
-		var relativeX = event.x - this.canvas.offsetLeft;
-		var relativeY = event.y - this.canvas.offsetTop;
+		var relativeX = event.clientX - this.canvas.offsetLeft;
+		var relativeY = event.clientY - this.canvas.offsetTop;
 		var cellX = Math.floor(relativeX / this.cellSize) + 1;
 		var cellY = Math.floor(relativeY / this.cellSize) + 1;
 
